@@ -12,7 +12,7 @@ void yyerror(char *);
 
 ofstream outlog;
 
-int lines;
+int lines = 1;
 
 // declare any other variables or functions needed here
 
@@ -431,7 +431,7 @@ int main(int argc, char *argv[])
 				return 0; 
 	}
 	yyin = fopen(argv[1], "r");
-	outlog.open("22301439.txt", ios::trunc);
+	outlog.open("22301439_log.txt", ios::trunc);
 	
 	if(yyin == NULL)
 	{
