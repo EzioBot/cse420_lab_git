@@ -18,7 +18,7 @@ int lines = 1;
 
 %}
 
-%token IF ELSE FOR WHILE DO INT FLOAT CHAR DOUBLE VOID RETURN BREAK CONTINUE SWITCH CASE DEFAULT GOTO PRINTF ID CONST_INT CONST_FLOAT ADDOP MULOP INCOP RELOP LOGICOP NOT ASSIGNOP LPAREN RPAREN LCURL RCURL LTHIRD RTHIRD COMMA COLON SEMICOLON
+%token IF ELSE FOR WHILE DO INT FLOAT DECOP   CHAR DOUBLE VOID RETURN BREAK CONTINUE SWITCH CASE DEFAULT GOTO PRINTF ID CONST_INT CONST_FLOAT ADDOP MULOP INCOP RELOP LOGICOP NOT ASSIGNOP LPAREN RPAREN LCURL RCURL LTHIRD RTHIRD COMMA COLON SEMICOLON
 
 %%
 
@@ -391,6 +391,12 @@ factor : variable
 		outlog << $1->getname() << $2->getname() << endl << endl;
 		$$ = new symbol_info($1->getname()+$2->getname(),"factor");
 	}
+	| variable DECOP
+	{
+		outlog<<"At line no: "<<lines<<" factor : variable DECOP"<<endl<<endl;
+		outlog << $1->getname() << $2->getname() << endl << endl;
+		$$ = new symbol_info($1->getname()+$2->getname(),"factor");
+	}
 	;
 
 argument_list : arguments
@@ -398,6 +404,11 @@ argument_list : arguments
 		outlog<<"At line no: "<<lines<<" argument_list : arguments"<<endl<<endl;
 		outlog<<$1->getname()<<endl<<endl;
 		$$ = new symbol_info($1->getname(),"args");
+	}
+	| /* empty */
+	{
+    outlog<<"At line no: "<<lines<<" argument_list : "<<endl<<endl;
+    $$ = new symbol_info("","args");
 	}
 	;
 

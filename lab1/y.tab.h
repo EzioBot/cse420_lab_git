@@ -53,36 +53,37 @@ extern int yydebug;
      DO = 262,
      INT = 263,
      FLOAT = 264,
-     CHAR = 265,
-     DOUBLE = 266,
-     VOID = 267,
-     RETURN = 268,
-     BREAK = 269,
-     CONTINUE = 270,
-     SWITCH = 271,
-     CASE = 272,
-     DEFAULT = 273,
-     GOTO = 274,
-     PRINTF = 275,
-     ID = 276,
-     CONST_INT = 277,
-     CONST_FLOAT = 278,
-     ADDOP = 279,
-     MULOP = 280,
-     INCOP = 281,
-     RELOP = 282,
-     LOGICOP = 283,
-     NOT = 284,
-     ASSIGNOP = 285,
-     LPAREN = 286,
-     RPAREN = 287,
-     LCURL = 288,
-     RCURL = 289,
-     LTHIRD = 290,
-     RTHIRD = 291,
-     COMMA = 292,
-     COLON = 293,
-     SEMICOLON = 294
+     DECOP = 265,
+     CHAR = 266,
+     DOUBLE = 267,
+     VOID = 268,
+     RETURN = 269,
+     BREAK = 270,
+     CONTINUE = 271,
+     SWITCH = 272,
+     CASE = 273,
+     DEFAULT = 274,
+     GOTO = 275,
+     PRINTF = 276,
+     ID = 277,
+     CONST_INT = 278,
+     CONST_FLOAT = 279,
+     ADDOP = 280,
+     MULOP = 281,
+     INCOP = 282,
+     RELOP = 283,
+     LOGICOP = 284,
+     NOT = 285,
+     ASSIGNOP = 286,
+     LPAREN = 287,
+     RPAREN = 288,
+     LCURL = 289,
+     RCURL = 290,
+     LTHIRD = 291,
+     RTHIRD = 292,
+     COMMA = 293,
+     COLON = 294,
+     SEMICOLON = 295
    };
 #endif
 /* Tokens.  */
@@ -93,36 +94,37 @@ extern int yydebug;
 #define DO 262
 #define INT 263
 #define FLOAT 264
-#define CHAR 265
-#define DOUBLE 266
-#define VOID 267
-#define RETURN 268
-#define BREAK 269
-#define CONTINUE 270
-#define SWITCH 271
-#define CASE 272
-#define DEFAULT 273
-#define GOTO 274
-#define PRINTF 275
-#define ID 276
-#define CONST_INT 277
-#define CONST_FLOAT 278
-#define ADDOP 279
-#define MULOP 280
-#define INCOP 281
-#define RELOP 282
-#define LOGICOP 283
-#define NOT 284
-#define ASSIGNOP 285
-#define LPAREN 286
-#define RPAREN 287
-#define LCURL 288
-#define RCURL 289
-#define LTHIRD 290
-#define RTHIRD 291
-#define COMMA 292
-#define COLON 293
-#define SEMICOLON 294
+#define DECOP 265
+#define CHAR 266
+#define DOUBLE 267
+#define VOID 268
+#define RETURN 269
+#define BREAK 270
+#define CONTINUE 271
+#define SWITCH 272
+#define CASE 273
+#define DEFAULT 274
+#define GOTO 275
+#define PRINTF 276
+#define ID 277
+#define CONST_INT 278
+#define CONST_FLOAT 279
+#define ADDOP 280
+#define MULOP 281
+#define INCOP 282
+#define RELOP 283
+#define LOGICOP 284
+#define NOT 285
+#define ASSIGNOP 286
+#define LPAREN 287
+#define RPAREN 288
+#define LCURL 289
+#define RCURL 290
+#define LTHIRD 291
+#define RTHIRD 292
+#define COMMA 293
+#define COLON 294
+#define SEMICOLON 295
 
 
 
